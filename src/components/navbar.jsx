@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-const Navbar = () => {
+function Navbar() {
 
   const [nav, setNav] = useState(false);
 
-  const handleClick = () => {
+  function handleClick() {
     setNav((prevState) => !prevState)
   }
 
   return (
-    <div className="w-full h-[80px] z-10 backdrop-blur-sm fixed ">
+    <div className="w-full h-[80px] z-10  backdrop-blur-sm fixed ">
       <div className="px-2 flex justify-between items-center w-5/6 mx-auto h-full">
         <div className="flex items-center ">
           <h1 className="text-3xl  font-bold sm:text-4xl ">The Wire</h1>
